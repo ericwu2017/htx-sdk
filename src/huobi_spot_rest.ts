@@ -1,8 +1,14 @@
+import { merge } from 'lodash';
 import { Rest_base, T_rest_opt } from './rest_base';
 
 export class Huobi_spot_rest extends Rest_base {
-  opt: T_rest_opt = {
-    base_url: 'https://api.huobi.pro/',
-  };
+  constructor(opt?: T_rest_opt) {
+    super(merge(opt, {
+      api_domain: 'api.huobi.pro',
+      api_proto: 'https',
+    }));
+  }
 }
+
+
 

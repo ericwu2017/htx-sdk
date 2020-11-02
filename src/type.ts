@@ -14,7 +14,7 @@ export enum E_level {
 }
 
 export interface T_res<T = any> {
-  status: string,
+  status: 'ok' | 'error',
   ts: number,
   data: T
 }

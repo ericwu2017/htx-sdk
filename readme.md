@@ -1,25 +1,25 @@
-# Template For Typescript-Based Node Package
+# Node API wrapper for Huobi
 
-> Please fill following fields with placehold "{xxx}"
+## Public API for spot
 
-## Project Information
-- Main problem this package solves: {xxx}.
-- Main language: {Language}.
+For public API, access key and secret is not required
 
-## Getting started
+```typescript
+import {Huobi_spot_rest} from 'huobi-node';
+const spot = new Huobi_spot_rest();
+await a.get('/market/tickers'); // You can replace any valid API path here
+```
 
-```bash
-npm i # Install.
-npm t # Run test first.
-npm start # Start development.
-``` 
+## Private API
 
-### {Can do this}
+For private API, access key and secret is required
 
-{Example}
+```typescript
+import { Huobi_spot_rest } from 'huobi-node';
+const a = new Huobi_spot_rest({ auth: { key: 'access_key_here', secret: 'secret_here' } });
+await a.get('/v1/account/accounts');
+```
 
-### {Can do that}
+## Websocket (Pending)
 
-{Example}
-
-
+Websocket is currently not supported yet.
