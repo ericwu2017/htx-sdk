@@ -12,3 +12,9 @@ export enum E_level {
   internal = 'internal',
   external = 'external',
 }
+
+export interface T_res<T = any> {
+  status: string,
+  ts: number,
+  data: T
+}

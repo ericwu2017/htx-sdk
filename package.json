@@ -1,9 +1,9 @@
 {
-  "name": "@mosteast/xxx",
-  "description": "xxx",
+  "name": "huobi-node",
+  "description": "Restful and Websocket API wrapper of Huobi",
   "version": "0.0.1",
-  "homepage": "https://github.com/xxx/xxx#readme",
-  "repository": "github:xxx/xxx",
+  "homepage": "https://github.com/mosteast/huobi-node#readme",
+  "repository": "github:mosteast/huobi-node",
   "main": "build/index.js",
   "type": "build/index.d.ts",
   "files": [
@@ -17,7 +17,9 @@
   "license": "ISC",
   "dependencies": {
     "@mosteast/common_eid": "^0.1.3",
-    "@mosteast/e": "^0.1.8"
+    "@mosteast/e": "^0.1.8",
+    "@types/node-fetch": "^2.5.7",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@types/fs-extra": "^8.1.1",
