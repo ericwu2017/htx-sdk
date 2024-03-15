@@ -1,9 +1,9 @@
 {
-  "name": "huobi-node",
-  "description": "Restful and Websocket API wrapper of Huobi",
+  "name": "htx-sdk",
+  "description": "Restful and Websocket API wrapper of HTX",
   "version": "0.0.1",
-  "homepage": "https://github.com/mosteast/huobi-node#readme",
-  "repository": "github:mosteast/huobi-node",
+  "homepage": "https://github.com/ericwu2017/htx-sdk#readme",
+  "repository": "github.com/ericwu2017/htx-sdk",
   "main": "build/index.js",
   "type": "build/index.d.ts",
   "files": [
@@ -15,7 +15,7 @@
     "release": "npm publish --access public",
     "build_and_release": "npm run build && cd build && npm run release"
   },
-  "author": "Mosteast team",
+  "author": "Ericwu2017",
   "license": "ISC",
   "dependencies": {
     "@mosteast/common_eid": "^0.1.3",

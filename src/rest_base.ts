@@ -47,7 +47,10 @@ export class Rest_base {
 
     return this.fetch(`${path}?${qs}`, {
       method,
-      body: query as any,
+      body: JSON.stringify(query as any),
+      headers: {
+        "Content-Type": "application/json"
+      }
     });
   }
 
